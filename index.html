@@ -403,13 +403,53 @@
             </li>
           </ul>
         </div>
+        <div class="futer-subscription">
+          <p class="futer-subscription-text">Підпишіться на розсилку</p>
+          <div class="futer-subscription-field">
+            <input type="text" class="futer-subscription-email" placeholder="E-mail" />
+            <button type="submit" class="button futer-subscription-button">
+              Підписатися
+              <svg class="futer-subscription-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </div>
+        </div>
       </div>
     </footer>
     <div data-modal class="blackdrop is-hidden">
       <div class="modal">
-        <form>
-          <input type="text" name="">
+        <form class="form">
+          <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
+          <div class="form-field">
+            <label for="name">Ім'я</label>
+            <input type="text" name="name" id="name" autofocus />
+          </div>
+          <div class="form-field">
+            <label for="tel">Телефон</label>
+            <input type="tel" name="tel" id="tel" />
+          </div>
+          <div class="form-field">
+            <label for="mail">Пошта</label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="form-field">
+            <label for="comment">Коментар</label>
+            <textarea
+              class="comment"
+              name="comment"
+              id="comment"
+              rows="40"
+              placeholder="Введіть текст"
+            ></textarea>
+          </div>
+          <div class="form-conditions">
+            <input type="checkbox" name="розсилка" id="s" />
+            <label for="s">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          </div>
+          <button type="submit" class="button">Відправити</button>
         </form>
+
         <button data-modal-close class="buton-close">
           <svg width="30px" height="30px">
             <use href="./images/sprite.svg#icon-close"></use>
