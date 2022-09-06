@@ -761,7 +761,7 @@ body {
   border-radius: 4px;
 }
 
-.buton-close {
+.button-close {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -805,18 +805,43 @@ body {
 
 .form-field input {
   margin: 0;
-  padding: 10px 15px;
+  padding: 10px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  width: 100%;
 }
 
-.form-conditions {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  color: #2196f3;
+.form-input-wrap {
+  position: relative;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.comment {
+.form-icon {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input-wrap:hover .form-icon,
+.form-input-wrap:focus .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-input:focus-visible {
+  outline: none;
+}
+
+.button-close-icon:hover {
+  fill: var(--accent-color);
+}
+.form-comment {
   resize: none;
   width: 448px;
   height: 120px;
@@ -828,4 +853,19 @@ body {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   color: rgba(117, 117, 117, 0.5);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-comment:hover,
+.form-comment:focus {
+  border-color: var(--accent-color);
+}
+.form-comment:focus-visible {
+  outline: none;
+}
+
+.form-consent {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  color: #2196f3;
 }
