@@ -432,8 +432,8 @@
             <label for="name">Ім'я</label>
             <div class="form-input-wrap">
               <input class="form-input" type="text" name="name" id="name" />
-              <svg class="form-icon" width="12px" height="12px">
-                <use href="./images/sprite.svg#icon-name"></use>
+              <svg class="form-icon">
+                <use href="./images/sprite.svg#icon-person"></use>
               </svg>
             </div>
           </div>
@@ -442,8 +442,8 @@
 
             <div class="form-input-wrap">
               <input class="form-input" type="tel" name="tel" id="tel" />
-              <svg class="form-icon" width="12px" height="12px">
-                <use href="./images/sprite.svg#icon-tel"></use>
+              <svg class="form-icon">
+                <use href="./images/sprite.svg#icon-phone"></use>
               </svg>
             </div>
           </div>
@@ -451,8 +451,8 @@
             <label for="mail">Пошта</label>
             <div class="form-input-wrap">
               <input class="form-input" type="email" name="mail" id="mail" />
-              <svg class="form-icon" width="12px" height="12px">
-                <use href="./images/sprite.svg#icon-mail"></use>
+              <svg class="form-icon">
+                <use href="./images/sprite.svg#icon-email"></use>
               </svg>
             </div>
           </div>
@@ -462,13 +462,20 @@
               class="form-comment"
               name="comment"
               id="comment"
-              rows="10"
               placeholder="Введіть текст"
             ></textarea>
           </div>
-          <div class="form-consent">
-            <input type="checkbox" name="розсилка" id="consent" />
-            <label for="consent">Погоджуюся з розсилкою та приймаю Умови договору</label>
+          <div class="form-checkbox">
+            <label class="checkbox-label">
+              <input class="checkbox visually-hidden" type="checkbox" name="send" />
+              <span class="checkbox-icon"> </span>
+              <span class="checkbox-text"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="checkbox-link" href="http://" target="_blank" rel="noopener noreferrer"
+                  >Умови договору</a
+                ></span
+              >
+            </label>
           </div>
           <button type="submit" class="button">Відправити</button>
         </form>
