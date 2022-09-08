@@ -829,9 +829,6 @@ body {
   height: 18px;
 }
 
-.form-input:focus-visible {
-  outline: none;
-}
 
 .form-input:focus + .form-icon {
   fill: var(--accent-color);
@@ -839,6 +836,7 @@ body {
 
 .form-input:focus {
   border-color: var(--accent-color);
+  outline: none;
 }
 
 .form-comment {
@@ -858,10 +856,9 @@ body {
 
 .form-comment:focus {
   border-color: var(--accent-color);
-}
-.form-comment:focus-visible {
   outline: none;
 }
+
 
 .checkbox-label {
   display: flex;
