@@ -294,13 +294,14 @@
         </div>
         <div class="futer-subscription">
           <p class="futer-subscription-text">Підпишіться на розсилку</p>
-          <div class="futer-subscription-field">
+          <form class="futer-subscription-field">
             <label for="subs-mail">
               <input
-                type="text"
+                type="email"
                 id="subs-mail"
                 class="futer-subscription-email"
                 placeholder="E-mail"
+                required
               />
             </label>
             <button type="submit" class="button futer-subscription-button">
@@ -309,7 +310,7 @@
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
-          </div>
+          </form>
         </div>
       </div>
     </footer>
