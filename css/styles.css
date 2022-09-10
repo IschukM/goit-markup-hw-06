@@ -764,6 +764,9 @@ body {
   position: absolute;
   top: 8px;
   right: 8px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 
   background-color: var(--primery-bg-color);
   padding: 0;
